@@ -163,6 +163,6 @@ func (s *Server) Throttler() *ConsoleThrottler {
 func (s *Server) PublishConsoleOutputFromDaemon(data string) {
 	s.Events().Publish(
 		ConsoleOutputEvent,
-		colorstring.Color(fmt.Sprintf("[yellow][bold][Pterodactyl Daemon]:[default] %s", data)),
+		colorstring.Color(fmt.Sprintf("[blue][bold][Alternos]:[default] %s", data)),
 	)
 }
